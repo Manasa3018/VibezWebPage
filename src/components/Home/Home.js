@@ -24,8 +24,11 @@ function Home() {
                 We' re
                 <strong className="main-name"> VIBEZ</strong><br></br>
                 <br></br>
-                <h2>The Official Music Club and Band of MIT</h2>
-                <h1></h1><i class='far fa-hand-point-down'></i>
+                {/* <h2>The Official Music Club and Band of MIT</h2> */}
+                
+                <h2>Vibez, is the official music band of MIT, AU. <br />
+                <br />
+                    Formed in 2010 with the aim of entertaining and producing quality music and bringing out the talents of the students of MIT.</h2>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -37,16 +40,12 @@ function Home() {
             <br></br>
             <br></br>
             </Col>
-            <br></br>
-            <br></br>
-            <br></br>
-
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                // className="myAvtar"
+                style={{ paddingTop:"100px" }}
               />
             </Col>
           </Row>

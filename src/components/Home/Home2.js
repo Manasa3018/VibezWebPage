@@ -2,6 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import oct from "../../Assets/oct6.png"
+import oct7 from "../../Assets/oct7.png"
+import accents from "../../Assets/accents.png"
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -16,27 +19,32 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              ACCENTS <span className="purple"> '23 </span> 
+              ACCENTS <strong><span className="purple"> '23 </span> </strong>
             </h1>
-            <p className="home-about-body">
+            <br>
+            </br>
+            <br></br>
+            <h2 style={{ justifyContent : "left"}}>
             The first-ever "Music Symposium" is set to make its grand debut! This event is a testament to the dedication and vision of music enthusiasts who have long dreamt of creating a platform for musicians, composers, educators, and music lovers to come together and celebrate music.
               <br />
               <br />Happening on 
               <br />
               <i>
-                <b className="purple" > October 7, 8</b>
+                {/* <b className="purple" > October 7, 8</b> */}
+                <img src={oct} className="imgcal"/>
+                <img src={oct7} className="imgcal"/>
               </i>
               <br />
               <br />
-              </p>
+              </h2>
             </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={accents} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
@@ -85,7 +93,7 @@ function Home2() {
               </li>
             </ul>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Container>
   );
