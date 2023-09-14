@@ -1,81 +1,125 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import  mitafest from "../../Assets/Mitafest.jpeg"
-import homefest from "../../Assets/homefest.jpeg"
-import lounge from "../../Assets/lounge.jpeg"
-import induction from "../../Assets/induction.jpeg"
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import mitafest from "../../Assets/Mitafest.jpeg";
+import homefest from "../../Assets/homefest.jpeg";
+import lounge from "../../Assets/lounge.jpeg";
+import induction from "../../Assets/induction.jpeg";
+import "./Techstack.css"; // Import the CSS file for styling
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <CgCPlusPlus /> */}
-        <img className="induction" height={"200px"} width={"100px"} src={induction} />
-        <figcaption>Induction for the 1st Years</figcaption>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <DiJavascript1 /> */}
-        <img className="mitafest" height={"200px"} width={"300px"} src={mitafest} />
-        <p>Mitafest'23</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <TbBrandGolang /> */}
-        <img className="homefest" height={"200px"} width={"300px"} src={homefest} />
-        <p>Homefest'23</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-      <img className="lounge" height={"200px"} width={"300px"} src={lounge} />
-        <p>Music Lounge</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <DiReact /> */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <SiSolidity /> */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <DiMongodb /> */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <SiNextdotjs /> */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <DiGit /> */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <SiFirebase /> */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <SiRedis /> */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <SiPostgresql /> */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <DiPython /> */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        {/* <DiJava /> */}
-      </Col>
-    </Row>
+    // <Row className="techstack-container">
+    //   <Col xs={4} md={2} className="tech-icons">
+    //     <div className="image-container">
+    //       <img className="tech-image" src={induction} alt="Induction" />
+    //       <div className="overlay">
+    //         <figcaption>Induction for the 1st Years</figcaption>
+    //       </div>
+    //     </div>
+    //   </Col>
+    //   <Col xs={4} md={2} className="tech-icons">
+    //     <div className="image-container">
+    //       <img className="tech-image" src={mitafest} alt="Mitafest" />
+    //       <div className="overlay">
+    //         <p>Mitafest'23</p>
+    //       </div>
+    //     </div>
+    //   </Col>
+    //   <Col xs={4} md={2} className="tech-icons">
+    //     <div className="image-container">
+    //       <img className="tech-image" src={homefest} alt="Homefest" />
+    //       <div className="overlay">
+    //         <p>Homefest'23</p>
+    //       </div>
+    //     </div>
+    //   </Col>
+    //   <Col xs={4} md={2} className="tech-icons">
+    //     <div className="image-container">
+    //       <img className="tech-image" src={lounge} alt="Music Lounge" />
+    //       <div className="overlay">
+    //         <p>Music Lounge</p>
+    //       </div>
+    //     </div>
+    //   </Col>
+    //   {/* Other Col components for icons */}
+    // </Row>
+    <div className="container">
+        <div class="container">
+
+<div class="gallery-container h-4">
+  <div class="gallery-item">
+    <div class="image">
+      <img src={induction} alt="nature"/>
+    </div>
+    <div class="text">Induction for first years</div>
+  </div>
+</div>
+
+<div class="gallery-container w-2">
+  <div class="gallery-item">
+    <div class="image">
+      <img src={mitafest} alt="people"/>
+    </div>
+    <div class="text">Mitafest'23</div>
+  </div>
+</div>
+
+<div class="gallery-container h-3">
+  <div class="gallery-item">
+    <div class="image">
+      <img src={homefest} alt="sport"/>
+    </div>
+    <div class="text">Homefest'23</div>
+  </div>
+</div>
+
+<div class="gallery-container w-3">
+  <div class="gallery-item">
+    <div class="image">
+      <img src={lounge} alt="fitness"/>
+    </div>
+    <div class="text">Music Lounge</div>
+  </div>
+</div>
+
+{/* <div class="gallery-container w-4 h-1">
+  <div class="gallery-item">
+    <div class="image">
+      <img src="add image here" alt=""/>
+    </div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="gallery-container">
+  <div class="gallery-item">
+    <div class="image">
+      <img src="add image here" alt=""/>
+    </div>
+    <div class="text">Travel</div>
+  </div>
+</div>
+
+<div class="gallery-container h-2">
+  <div class="gallery-item">
+    <div class="image">
+      <img src=add image here alt=""/>
+    </div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="gallery-container">
+  <div class="gallery-item">
+    <div class="image">
+      <img src=add image here alt=""/>
+    </div>
+    <div class="text"></div>
+  </div>
+</div> */}
+
+</div>
+    </div>
   );
 }
 

@@ -36,15 +36,15 @@ function About() {
 
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Our <strong className="purple">Gallery </strong>
         </h1>
 
         <Techstack />
 
-        <h1 className="project-heading">
+        {/* <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
-        <Toolstack />
+        <Toolstack /> */}
         {/* <Github /> */}
       </Container>
     </Container>

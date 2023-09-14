@@ -9,7 +9,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            VIBEZ<span className="purple"></span>
+            VIBEZ <span className="purple"></span>
             is not just a college music band; it's a musical journey that started as a shared dream among a group of passionate students at MIT. What began as a casual jam session in a dorm room has evolved into a well-respected and beloved musical ensemble known for their unique blend of genres, electrifying performances, and a deep connection with their audience.
             </p>
             <img src={bandgroup} className="bandgroup"

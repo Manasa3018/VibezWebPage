@@ -32,7 +32,7 @@ function Home2() {
               <i>
                 {/* <b className="purple" > October 7, 8</b> */}
                 <img src={oct} className="imgcal"/>
-                <img src={oct7} className="imgcal"/>
+                <img src= {oct7} className="imgcal"/>
               </i>
               <br />
               <br />
